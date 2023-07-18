@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+</head>
+<style>
+     body{
+        background-image: url(foodd.jpg);
+        }
+        .container{
+            width: 500px;
+            border: 1px underline solid;
+            background-image: linear-gradient(red,orange);
+            margin-left: 400px;
+            margin-right: 200px;
+            text-decoration: underline;
+            border-radius: 15px 50px 30px; 
+            }
+            .box{
+                border: 5px solid black;
+                width: 400px;
+                height: 400px;
+                margin-left: 450px;
+                background-color: white;
+                padding-left: 20px;
+                font-size: larger;
+                color: red;
+            }
+           
+            .button1 {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-left: 500px;
+    margin-right: 300px;
+    margin-top: 20px;
+  }
+  
+  .button1 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button1 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button1:hover span {
+    padding-right: 25px;
+  }
+  
+  .button1:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+</style>
+<body>
+    <div class="container">
+        <h1>Welcome to the login page! Please<center>register to order</center></h1>
+        </div>
+        <div class="box">
+            Name* <br> <input type="text" name="Username" required><br>
+            Email* <br> <input type="text" name="Email" required><br>
+            Phone* <br> <input type="number" name="Phone" required><br>
+            Feedback<br><textarea name="comments" rows="15" cols="50"></textarea>
+        </div>
+        <div class="button1">
+            <span>
+                Register
+            </span>
+        </div>
+        
+    
+    
+</body>
+</html>
